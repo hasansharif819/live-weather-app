@@ -585,6 +585,10 @@ div#txt {
     margin-top: 22px;
     padding: 25px 0px;
   }
+
+  .saved-locations {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -730,7 +734,7 @@ div#txt {
   align-items: center;
 }
 
-.saved-locations {
+/* .saved-locations {
   margin-top: 20px;
 }
 
@@ -766,4 +770,125 @@ div#txt {
   border-radius: 3px;
   cursor: pointer;
   margin-left: 10px;
+}
+
+.saved-locations {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.saved-location {
+  position: relative;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.remove-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.weather-info {
+  margin-top: 10px;
+}
+
+.unit-toggle {
+  margin-left: 10px;
+}
+
+.unit-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.unit-button.active {
+  font-weight: bold;
+} */
+
+.main-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.saved-locations {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.add-location {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.add-location input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.add-location button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-location button:hover {
+  background-color: #0056b3;
+}
+
+.location-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.location-card {
+  color: white;
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.location-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.remove-icon {
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.location-details img {
+  width: 50px;
+  height: 50px;
+}
+
+.location-details p {
+  margin: 5px 0;
 }

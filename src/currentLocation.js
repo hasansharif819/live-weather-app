@@ -61,7 +61,7 @@ class Weather extends React.Component {
     sunrise: undefined,
     sunset: undefined,
     errorMsg: undefined,
-    unit: "celsius", // Add state for temperature unit
+    unit: "celsius",
   };
 
   componentDidMount() {
